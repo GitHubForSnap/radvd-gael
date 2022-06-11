@@ -26,6 +26,9 @@ This product includes software developed by the authors which are mentioned at t
 * Dump ICMPv6 packets
 `sudo tcpdump -n -i <<YOUR_INTERFACE>> icmp6`
 
+**2022-06-11**
+* Improvements, up to git commit e1f9dbc (2022-06-11)
+*  add IPV6_DROP_MEMBERSHIP to clean up resources when reload or restart 
 
 **2022-05-31**
 * Improvements, up to git commit 16e1139 (2022-03-20)
