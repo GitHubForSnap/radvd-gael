@@ -27,8 +27,12 @@ This product includes software developed by the authors which are mentioned at t
 `sudo tcpdump -n -i <<YOUR_INTERFACE>> icmp6`
 
 
+**2022-07-10**
+* Improvements, up to git commit a646066 (2022-07-08)
+* Add pref64 support (RFC8781)
+
 **2022-06-30**
-* Improvements, up to git commit b0cb5a2
+* Improvements, up to git commit b0cb5a2 (2022-06-30)
 * Change RDNSS and DNSSL lifetime default values
 
 **2022-06-11**
