@@ -22,7 +22,7 @@ apps:
 parts:
   launcher:
     plugin: dump
-    source: ./local/launcher
+    source: snap/local/launcher
     stage:
       - radvd.sh
 
