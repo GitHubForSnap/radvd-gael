@@ -1,6 +1,6 @@
 name: radvd-gael
 base: core20
-version: "2.19+git.a646066"
+version: "2.19+git.c8a11fd"
 summary: Router Advertisement Daemon
 description: |
   The Router Advertisement Daemon (radvd) is an open-source software product that implements link-local advertisements of IPv6 router addresses and IPv6 routing prefixes using the Neighbor Discovery Protocol (NDP) as specified in RFC 2461.
@@ -29,11 +29,11 @@ parts:
   app:
     plugin: autotools
     source: https://github.com/radvd-project/radvd
-    source-commit: a6460662c6ac2b13307a8977ef068825b66fbce0
+    source-commit: c8a11fdc1e63d78b8fe89554192e2452185a65f3
     source-type: git
     override-pull: |
       snapcraftctl pull
-      sed -i '56,61d' configure.ac
+      sed -i '57,62d' configure.ac
     build-packages:
       - build-essential
       - byacc

@@ -26,6 +26,9 @@ This product includes software developed by the authors which are mentioned at t
 * Dump ICMPv6 packets
 `sudo tcpdump -n -i <<YOUR_INTERFACE>> icmp6`
 
+**2022-10-03**
+* Improvements, up to git commit c8a11fd (2022-09-08)
+* Fix case of AdvValidLifetime option
 
 **2022-07-10**
 * Improvements, up to git commit a646066 (2022-07-08)
