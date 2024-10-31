@@ -26,8 +26,14 @@ This product includes software developed by the authors which are mentioned at t
 * Dump ICMPv6 packets
 `sudo tcpdump -n -i <<YOUR_INTERFACE>> icmp6`
 
+**2024-10-31**
+* radvd-gael will now use core24 as most users are on Ubuntu 24.04
+
+**2024-03-06**
+* radvd-gael version 2.20-rc.1 promoted to stable after 4 months of edge testing
+
 **2023-07-26**
-* radvd-gael will now use core22 as most of the users are on Ubuntu 22.04
+* radvd-gael will now use core22 as most users are on Ubuntu 22.04
 
 **2022-10-03**
 * Improvements, up to git commit c8a11fd (2022-09-08)
