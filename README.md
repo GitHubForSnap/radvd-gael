@@ -11,10 +11,13 @@ This product includes software developed by the authors which are mentioned at t
 
 **First use**
 
-* Grant firewall-control that may not be automatically granted
+* Grant firewall-control to radvd-gael to the daemon (mandatory)
 `sudo snap connect radvd-gael:firewall-control`
 
-* Configure radvd
+* Grant network-control to radvd-gael to radvdump (optional)
+`sudo snap connect radvd-gael:network-control`
+
+* Configure radvd daemon
 `sudo vi /var/snap/radvd-gael/current/radvd.conf`
 
 * Restart the service
@@ -24,7 +27,12 @@ This product includes software developed by the authors which are mentioned at t
 `sudo snap logs radvd-gael.radvd`
 
 * Dump ICMPv6 packets
+`sudo radvd-gael.radvdump`
+or
 `sudo tcpdump -n -i <<YOUR_INTERFACE>> icmp6`
+
+**2024-12-31**
+* v2.20 on amd64, armhf & arm64
 
 **2024-10-31**
 * radvd-gael will now use core24 as most users are on Ubuntu 24.04
