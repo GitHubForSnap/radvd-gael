@@ -32,7 +32,7 @@ or
 `sudo tcpdump -n -i <<YOUR_INTERFACE>> icmp6`
 
 **2025-04-27**
-* Improvements, up to git commit 878ca6b (2025-05-25)
+* Improvements, up to git commit 878ca6b (2025-04-25)
 * Increase max AdvDefaultLifetime and MaxRtrAdvInterval (RFC8319 support)
 
 **2024-12-31**
